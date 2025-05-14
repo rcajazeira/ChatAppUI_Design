@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+  
+  
+  & main{
+    background: linear-gradient(to bottom, #6B70DE 0%, #3A3D78 100%);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  width: 100vh;
+  height: 100vh;
+}
