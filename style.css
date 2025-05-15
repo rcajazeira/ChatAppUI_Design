@@ -37,3 +37,17 @@ main {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
   position: relative; 
 }
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.barra-lateral ul.desligar {
+  margin-bottom: 15px; 
+}
