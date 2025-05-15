@@ -77,3 +77,27 @@ main {
 .barra-lateral li a:hover {
   background-color: rgba(255, 255, 255, 0.1); 
 }
+
+
+.barra-lateral li a .material-icons,
+.barra-lateral li a .fas {
+  font-size: 24px; 
+  vertical-align: middle; 
+}
+
+
+.barra-lateral .icones-variados li.tem-divisor {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 10px; 
+  padding-bottom: 22px; 
+}
+
+
+.conteudo-principal-exemplo {
+  flex-grow: 1; 
+  padding: 20px;
+  color: white; 
+  
+  background-color: transparent; 
+ 
+}
