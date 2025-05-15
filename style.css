@@ -51,3 +51,29 @@ main {
 .barra-lateral ul.desligar {
   margin-bottom: 15px; 
 }
+
+.barra-lateral ul.icones-variados {
+  flex-grow: 1; 
+}
+
+.barra-lateral ul.icones-dois {
+ 
+}
+
+.barra-lateral li {
+  width: 100%; 
+  text-align: center; 
+}
+
+.barra-lateral li a {
+  display: block; 
+  padding: 12px 0; 
+  color: white;
+  text-decoration: none;
+  font-size: 22px; 
+  transition: background-color 0.2s ease-in-out;
+}
+
+.barra-lateral li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
