@@ -20,10 +20,9 @@ main {
   justify-content: center;
   align-items: flex-start;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0;
-  margin-right: 100%;
 }
 
 .barra-lateral {
@@ -114,33 +113,35 @@ main {
 .barramento {
   width: 100%;
   background: linear-gradient(145deg, white 60%, #5a5fef 40%);
-  padding: 13px 445px; /* Reduzi o padding lateral exagerado */
+  padding: 20px;
   display: flex;
-  justify-content: center; /* Centraliza o input-container */
 }
 
 .input-container {
   position: relative;
   width: 100%;
-  max-width: 600px; /* Largura máxima para melhor responsividade */
+  max-width: 270px; /* Largura máxima para melhor responsividade */
+  margin-left: 20px;
 }
 
 .input-container input {
   width: 100%;
   padding: 10px 20px 10px 40px; /* Espaço à esquerda para o ícone */
-  height: 40px;
+  height: 20px;
   border: 1px solid #b4acac;
   border-radius: 20px;
   outline: none;
-  font-size: 16px;
+  font-size: 14px;
+  padding-left: 50px;
+  text-align: left;
 }
 
 .input-container .material-icons {
   position: absolute;
-  left: 15px; /* Posiciona o ícone dentro do input */
+  left: 10px; /* Posiciona o ícone dentro do input */
   top: 50%;
   transform: translateY(-50%);
   color: #666;
-  font-size: 20px;
+  font-size: 30px;
   pointer-events: none;
 }
