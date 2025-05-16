@@ -103,15 +103,26 @@ main {
  
 }
 
+.barra-busca-perfil {
+  flex-grow: 1; 
+  margin-left: 0; 
+  width: calc(100% - 70px); 
+  
+}
+
 .barramento {
-  width: 100%; 
+  /* width: 100%; 
   background:linear-gradient(145deg, white 60%, #5a5fef 40%); 
   height: 100%; 
-  display: flex;
+  width: 100%;
   flex-direction: row; 
   align-items: center; 
   padding: 31px 0px; 
   box-sizing: border-box; 
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
-  position: relative; 
+  position: relative;  */
+  width: 100%;
+  background: linear-gradient(145deg, white 60%, #5a5fef 40%);
+  padding: 24px 418px; 
+  
 }
