@@ -103,65 +103,44 @@ main {
  
 }
 
+/* aqui */
+
 .barra-busca-perfil {
-  flex-grow: 1; 
-  margin-left: 0; 
-  width: calc(100% - 70px); 
-  
+  flex-grow: 1;
+  margin-left: 0; /* Adicionei margem para não sobrepor a barra lateral */
+  width: calc(100% - 70px);
 }
 
 .barramento {
-  /* width: 100%; 
-  background:linear-gradient(145deg, white 60%, #5a5fef 40%); 
-  height: 100%; 
-  width: 100%;
-  flex-direction: row; 
-  align-items: center; 
-  padding: 31px 0px; 
-  box-sizing: border-box; 
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
-  position: relative;  */
   width: 100%;
   background: linear-gradient(145deg, white 60%, #5a5fef 40%);
-  padding: 24px 418px; 
-
-  &.input-container {
-  position: relative; /* Permite posicionar o ícone absolutamente dentro dele */
-  /* width: 100%; */ /* Ocupa toda a largura do .barramento */
+  padding: 13px 445px; /* Reduzi o padding lateral exagerado */
+  display: flex;
+  justify-content: center; /* Centraliza o input-container */
 }
 
-& .input-container input {
+.input-container {
+  position: relative;
   width: 100%;
-  /* padding-left: 30px; */ /* Espaço para o ícone à esquerda */
-  height: 30px; /* Ajuste conforme necessário */
-  border: rgb(180, 172, 172) 1px solid; /* Borda preta */
-  border-radius: 20px; /* Bordas arredondadas (opcional) */
-  outline: none; /* Remove a borda padrão ao focar */
+  max-width: 600px; /* Largura máxima para melhor responsividade */
 }
 
-&.input-container .material-icons {
+.input-container input {
+  width: 100%;
+  padding: 10px 20px 10px 40px; /* Espaço à esquerda para o ícone */
+  height: 40px;
+  border: 1px solid #b4acac;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-container .material-icons {
   position: absolute;
-  /* left: 10px; */ /* Distância da borda esquerda */
-  top: 50%; /* Centraliza verticalmente */
-  transform: translateY(-50%); /* Ajuste fino do posicionamento */
-  color: #666; /* Cor do ícone */
-  font-size: 20px; /* Tamanho do ícone */
-  pointer-events: none; /* Permite clicar através do ícone no input */
-}
-
-  
-    /* width: 100%;
-    background: linear-gradient(145deg, white 60%, #5a5fef 40%);
-    padding: 24px 418px; 
-    border-radius: 20px;
-    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0; 
-    margin-top: 0; 
-    margin-bottom: 0; 
-    height: 100%;  */
-
-  
+  left: 15px; /* Posiciona o ícone dentro do input */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 20px;
+  pointer-events: none;
 }
