@@ -124,5 +124,44 @@ main {
   width: 100%;
   background: linear-gradient(145deg, white 60%, #5a5fef 40%);
   padding: 24px 418px; 
+
+  &.input-container {
+  position: relative; /* Permite posicionar o ícone absolutamente dentro dele */
+  /* width: 100%; */ /* Ocupa toda a largura do .barramento */
+}
+
+& .input-container input {
+  width: 100%;
+  /* padding-left: 30px; */ /* Espaço para o ícone à esquerda */
+  height: 30px; /* Ajuste conforme necessário */
+  border: rgb(180, 172, 172) 1px solid; /* Borda preta */
+  border-radius: 20px; /* Bordas arredondadas (opcional) */
+  outline: none; /* Remove a borda padrão ao focar */
+}
+
+&.input-container .material-icons {
+  position: absolute;
+  /* left: 10px; */ /* Distância da borda esquerda */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajuste fino do posicionamento */
+  color: #666; /* Cor do ícone */
+  font-size: 20px; /* Tamanho do ícone */
+  pointer-events: none; /* Permite clicar através do ícone no input */
+}
+
+  
+    /* width: 100%;
+    background: linear-gradient(145deg, white 60%, #5a5fef 40%);
+    padding: 24px 418px; 
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+    height: 100%;  */
+
   
 }
