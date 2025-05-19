@@ -178,3 +178,62 @@ main {
   }
   
 }
+
+/* aqui2 */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+:root {
+  --primary: #5961f9;
+  --light-bg: #f7f8fb;
+  --dark-text: #3a3a3a;
+  --gray-text: #aaa;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; background: var(--light-bg); }
+.chat-container { display: flex; height: 100vh; }
+
+.sidebar { width: 300px; background: var(--primary); color: white; padding: 20px; overflow-y: auto; }
+.contact-list { list-style: none; }
+.contact { display: flex; align-items: center; padding: 10px; cursor: pointer; border-radius: 8px; margin-bottom: 10px; }
+.contact.active, .contact:hover { background: rgba(255,255,255,0.1); }
+.contact img { width: 50px; height: 50px; border-radius: 50%; margin-right: 10px; }
+.contact .info { flex: 1; }
+.contact .info strong { display: block; }
+.contact .info small { font-size: 0.85em; color: rgba(255,255,255,0.8); }
+.contact time { font-size: 0.75em; color: rgba(255,255,255,0.7); }
+
+.chat-main { flex: 1; display: flex; flex-direction: column; }
+.chat-header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+.profile { display: flex; align-items: center; }
+.profile img { width: 40px; height: 40px; border-radius: 50%; margin-right: 10px; }
+.profile h2 { font-size: 1.2em; color: var(--dark-text); }
+.profile small { color: var(--gray-text); }
+.actions .icon { width: 30px; height: 30px; background-size: 16px; background-repeat: no-repeat; border: none; margin-left: 10px; cursor: pointer; }
+.actions .video { background-image: url('video-icon.svg'); }
+.actions .phone { background-image: url('phone-icon.svg'); }
+.actions .file { background-image: url('file-icon.svg'); }
+
+.messages { flex: 1; padding: 20px; overflow-y: auto; background: var(--light-bg); }
+.message { display: flex; align-items: flex-end; margin-bottom: 15px; }
+.message.received { justify-content: flex-start; }
+.message.sent { justify-content: flex-end; }
+.message img { width: 35px; height: 35px; border-radius: 50%; }
+.message .bubble { max-width: 60%; padding: 10px 15px; border-radius: 20px; margin: 0 10px; position: relative; }
+.message.received .bubble { background: white; color: var(--dark-text); border-bottom-left-radius: 0; }
+.message.sent .bubble { background: var(--primary); color: white; border-bottom-right-radius: 0; }
+.message time { font-size: 0.75em; color: var(--gray-text); }
+
+.chat-input { padding: 15px 20px; background: white; border-top: 1px solid #eee; }
+.chat-input span { display: block; margin-bottom: 5px; color: var(--gray-text); font-size: 0.85em; }
+.input-area { display: flex; align-items: center; }
+.input-area textarea { flex: 1; border: 1px solid #ddd; border-radius: 20px; padding: 10px 15px; resize: none; height: 40px; font-size: 0.95em; }
+.input-area .icon { width: 25px; height: 25px; background-size: 16px; background-repeat: no-repeat; border: none; margin-left: 10px; cursor: pointer; }
+.input-area .emoji { background-image: url('emoji-icon.svg'); }
+.input-area .add { background-image: url('add-icon.svg'); }
+.input-area .send { background-image: url('send-icon.svg'); }
