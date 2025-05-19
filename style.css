@@ -112,7 +112,7 @@ main {
 
 .barramento {
   width: 100%;
-  background: linear-gradient(145deg, white 60%, #5a5fef 40%);
+  background: linear-gradient(145deg, white 70%, #5a5fef 30%);
   padding: 20px;
   display: flex;
   padding: 13px 0;
@@ -145,4 +145,8 @@ main {
   color: #666;
   font-size: 30px;
   pointer-events: none;
+}
+
+perfil-papudo {
+  
 }
