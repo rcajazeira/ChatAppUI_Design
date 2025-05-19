@@ -1,18 +1,16 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  
-  
-  
-  & main{
-    background: linear-gradient(to bottom, #6B70DE 0%, #3A3D78 100%);
+
+  & main {
+    background: linear-gradient(to bottom, #6b70de 0%, #3a3d78 100%);
   }
 }
 
 main {
-  width: 100%; 
+  width: 100%;
   height: 100vh;
-  display: flex; 
+  display: flex;
 }
 
 .container {
@@ -26,80 +24,75 @@ main {
 }
 
 .barra-lateral {
-  width: 70px; 
-  background-color: #6A67CE; 
-  height: 100%; 
+  width: 70px;
+  background-color: #6a67ce;
+  height: 100%;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  padding: 20px 0; 
-  box-sizing: border-box; 
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
-  position: relative; 
+  position: relative;
 }
 
 .barra-lateral ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%; 
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .barra-lateral ul.desligar {
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 .barra-lateral ul.icones-variados {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .barra-lateral ul.icones-dois {
- 
 }
 
 .barra-lateral li {
-  width: 100%; 
-  text-align: center; 
+  width: 100%;
+  text-align: center;
 }
 
 .barra-lateral li a {
-  display: block; 
-  padding: 12px 0; 
+  display: block;
+  padding: 12px 0;
   color: white;
   text-decoration: none;
-  font-size: 22px; 
+  font-size: 22px;
   transition: background-color 0.2s ease-in-out;
 }
 
 .barra-lateral li a:hover {
-  background-color: rgba(255, 255, 255, 0.1); 
+  background-color: rgba(255, 255, 255, 0.1);
 }
-
 
 .barra-lateral li a .material-icons,
 .barra-lateral li a .fas {
-  font-size: 24px; 
-  vertical-align: middle; 
+  font-size: 24px;
+  vertical-align: middle;
 }
-
 
 .barra-lateral .icones-variados li.tem-divisor {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 10px; 
-  padding-bottom: 22px; 
+  margin-bottom: 10px;
+  padding-bottom: 22px;
 }
 
-
 .conteudo-principal-exemplo {
-  flex-grow: 1; 
+  flex-grow: 1;
   padding: 20px;
-  color: white; 
-  
-  background-color: transparent; 
- 
+  color: white;
+
+  background-color: transparent;
 }
 
 /* aqui */
@@ -111,42 +104,77 @@ main {
 }
 
 .barramento {
-  width: 100%;
-  background: linear-gradient(145deg, white 70%, #5a5fef 30%);
-  padding: 20px;
+  background: linear-gradient(145deg, white 60%, #5a5fef 40%);
+  padding: 0 40px;
   display: flex;
-  padding: 13px 0;
+  justify-content: space-between;
+  align-items: center;
+
+  & .perfil-papudo {
+    display: flex;
+  }
 }
 
 .input-container {
   position: relative;
-  width: 100%;
-  max-width: 270px; /* Largura máxima para melhor responsividade */
-  margin-left: 20px;
+  width: fit-content;
+
+  & i {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+  }
+
+  input {
+    width: fit-content;
+    padding: 10px 20px 10px 40px; /* Espaço à esquerda para o ícone */
+    height: 20px;
+    border: 1px solid #b4acac;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    padding-left: 50px;
+    text-align: flex-end;
+    justify-content: end;
+  }
+
+  .material-icons {
+    color: #666;
+    font-size: 30px;
+    pointer-events: none;
+  }
 }
 
-.input-container input {
-  width: 100%;
-  padding: 10px 20px 10px 40px; /* Espaço à esquerda para o ícone */
-  height: 20px;
-  border: 1px solid #b4acac;
-  border-radius: 20px;
-  outline: none;
-  font-size: 14px;
-  padding-left: 50px;
-  text-align: left;
-}
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-.input-container .material-icons {
-  position: absolute;
-  left: 10px; /* Posiciona o ícone dentro do input */
-  top: 50%;
-  transform: translateY(-50%);
-  color: #666;
-  font-size: 30px;
-  pointer-events: none;
-}
+  h2,p{
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
 
-perfil-papudo {
+  p{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p::before{
+    display: block;
+    content:"";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+  }
+
+  img{
+    border-radius: 50%;
+    size: 50px;
+  }
   
 }
