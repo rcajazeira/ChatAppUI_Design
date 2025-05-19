@@ -115,6 +115,7 @@ main {
   background: linear-gradient(145deg, white 60%, #5a5fef 40%);
   padding: 20px;
   display: flex;
+  padding: 13px 0;
 }
 
 .input-container {
