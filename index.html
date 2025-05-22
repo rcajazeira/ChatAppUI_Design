@@ -13,138 +13,207 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Se a fonte da imagem for muito específica, como Inter ou Open Sans, adicione-a aqui -->
     <title>Chat App UI Design</title>
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="barra-lateral">
-          <ul class="desligar">
+        <div class="barra-lateral-principal">
+          <ul class="botoes-navegacao-principal">
             <li>
-              <a href="#"><i class="material-icons">power_settings_new</i></a>
+              <a href="#" title="Power"><i class="material-icons">power_settings_new</i></a>
             </li>
           </ul>
-          <ul class="icones-variados">
-            <li>
-              <a href="#"><i class="material-icons">chat_bubble_outline</i></a>
+          <ul class="botoes-navegacao-principal icones-meio">
+            <li class="active-sidebar-icon">
+              <a href="#" title="Chat"><i class="material-icons">chat_bubble_outline</i></a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-user"></i></a>
+              <a href="#" title="Profile"><i class="fas fa-user"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-th-large"></i></a>
+              <a href="#" title="Dashboard"><i class="fas fa-th-large"></i></a>
             </li>
           </ul>
-          <ul class="icones-dois">
+          <ul class="botoes-navegacao-principal icones-inferiores">
             <li>
-              <a href="#"><i class="fas fa-cog"></i></a>
+              <a href="#" title="Settings"><i class="fas fa-cog"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#" title="Menu"><i class="fas fa-bars"></i></a>
             </li>
           </ul>
         </div>
 
-        <div class="barra-busca-perfil">
-          <div class="barramento">
-            <div class="input-container">
+        <div class="conteudo-principal">
+          <div class="barramento-superior">
+            <div class="campo-busca-container">
+              <i class="material-icons icone-busca">search</i>
               <input
                 type="text"
+                class="campo-busca"
                 placeholder="Search contact, messages or options here."
               />
-              <i class="material-icons">search</i>
             </div>
-            <div class="perfil">
-              <div class="perfil-data">
+            <div class="perfil-usuario-superior">
+              <div class="info-usuario-superior">
                 <h2>John Mattews</h2>
-                <p>Online</p>
+                <p class="status-online">Online</p>
               </div>
-              <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png" 
-              alt="Gato" 
-              width="50" 
-              height="50"
-              style="object-fit: cover; border-radius: 50%;">
->
+              <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png"
+              alt="John Mattews"
+              class="avatar-usuario-superior">
             </div>
           </div>
-        </div>
-        <!-- aqui -->
-         <div class="chat-container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <ul class="contact-list">
-        <li class="contact active">
-          <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png" alt="Nicolas Klaus">
-          <div class="info">
-            <strong>Nicolas Klaus</strong>
-            <small>Great shots on Dribbble!</small>
+
+          <div class="chat-container-app">
+            <aside class="sidebar-contatos">
+              <ul class="lista-contatos">
+                <li class="item-contato active">
+                  <div class="avatar-contato-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2zOSTtm5b0uRhUWwh7I708XUdROQARG9Lg&s" alt="Nicolas Klaus" class="avatar-contato">
+                    <span class="status-dot online"></span>
+                  </div>
+                  <div class="info-contato">
+                    <strong>Nicolas Klaus</strong>
+                    <small>Great shots on Dribbble!</small>
+                  </div>
+                  <time class="hora-contato">12:35</time>
+                </li>
+                <li class="item-contato">
+                  <div class="avatar-contato-wrapper">
+                    <img src="https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?crop=1&resize=1212,909" alt="Jonas Mars" class="avatar-contato">
+                  </div>
+                  <div class="info-contato">
+                    <strong>Jonas Mars</strong>
+                    <small>Hey man, how are you? I he...</small>
+                  </div>
+                  <div class="detalhes-contato">
+                    <time class="hora-contato">12:10</time>
+                    <span class="badge-notificacao">1</span>
+                  </div>
+                </li>
+                <li class="item-contato">
+                  <div class="avatar-contato-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSswwvA9WWb2e3ZfFOEMZHik4jQ9MgJGCEDbg&s" alt="Laura Veirs" class="avatar-contato">
+                  </div>
+                  <div class="info-contato">
+                    <strong>Laura Veirs</strong>
+                    <small>Hey, I just hope that you will...</small>
+                  </div>
+                  <div class="detalhes-contato">
+                    <time class="hora-contato">17:25</time>
+                    <span class="badge-notificacao">3</span>
+                  </div>
+                </li>
+                <li class="item-contato">
+                  <div class="avatar-contato-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX9wkXl0orjEpHeRbwIo0BGKtllH_uecf9zw&s" alt="Aslan Asafi" class="avatar-contato">
+                  </div>
+                  <div class="info-contato">
+                    <strong>Aslan Asafi</strong>
+                    <small>I really hope that everything is...</small>
+                  </div>
+                  <time class="hora-contato">16:35</time>
+                </li>
+                <li class="item-contato">
+                  <div class="avatar-contato-wrapper">
+                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/d12c/live/8a3908e0-a667-11ee-8fa7-fd0d73e9c4ba.jpg.webp" alt="Olivia Colman" class="avatar-contato">
+                  </div>
+                  <div class="info-contato">
+                    <strong>Olivia Colman</strong>
+                    <small>Hi, I'm reaching out about th...</small>
+                  </div>
+                  <time class="hora-contato">11:35</time>
+                </li>
+                <li class="item-contato">
+                  <div class="avatar-contato-wrapper">
+                    <img src="https://jpimg.com.br/uploads/2024/06/7-racas-de-gato-que-tendem-a-ser-teimosas.jpg" alt="Norman Stark" class="avatar-contato">
+                  </div>
+                  <div class="info-contato">
+                    <strong>Norman Stark</strong>
+                    <small>Did you watch the latest mo...</small>
+                  </div>
+                  <time class="hora-contato">12:35</time>
+                </li>
+                <li class="item-contato">
+                 <div class="avatar-contato-wrapper">
+                    <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/06/gatos-selvagens-felinos.jpg" alt="Larry Croft" class="avatar-contato">
+                  </div>
+                  <div class="info-contato">
+                    <strong>Larry Croft</strong>
+                    <small>Cool shots on Dribble! I per...</small>
+                  </div>
+                  <time class="hora-contato">12:35</time>
+                </li>
+                <li class="item-contato">
+                  <div class="avatar-contato-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJA2V09xtNCez2fyNGr7mDXMh8TXAri--UQg&s" alt="Tony Kazinsky" class="avatar-contato">
+                  </div>
+                  <div class="info-contato">
+                    <strong>Tony Kazinsky</strong>
+                    <small>Hey, how's going? I just hea...</small>
+                  </div>
+                  <time class="hora-contato">12:35</time>
+                </li>
+              </ul>
+            </aside>
+
+            <section class="area-chat-principal">
+              <header class="cabecalho-chat">
+                <div class="perfil-chat">
+                  <img src="https://placehold.co/38x38/FFFFFF/1A1A1A?text=NK&font=roboto" alt="Nicolas Klaus" class="avatar-perfil-chat">
+                  <div>
+                    <h2 class="nome-perfil-chat">Nicolas Klaus</h2>
+                    <small class="status-perfil-chat">Online</small>
+                  </div>
+                </div>
+                <div class="acoes-chat">
+                  <button class="botao-icone-chat" title="Video Call"><i class="fas fa-video"></i></button>
+                  <button class="botao-icone-chat" title="Voice Call"><i class="fas fa-phone-alt"></i></button>
+                  <button class="botao-icone-chat" title="Files"><i class="fas fa-folder"></i></button>
+                </div>
+              </header>
+
+              <div class="area-mensagens">
+                <div class="mensagem recebida">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2zOSTtm5b0uRhUWwh7I708XUdROQARG9Lg&s" alt="Nicolas Klaus" class="avatar-mensagem">
+                  <div class="bolha-mensagem">Great shots on Dribbble!</div>
+                  <time class="hora-mensagem">12:44</time>
+                </div>
+                <div class="mensagem enviada">
+                  <time class="hora-mensagem">12:45</time>
+                  <div class="bolha-mensagem">Thank you, how are you?</div>
+                  <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png" alt="You" class="avatar-mensagem">
+                </div>
+                <div class="mensagem recebida">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2zOSTtm5b0uRhUWwh7I708XUdROQARG9Lg&s" alt="Nicolas Klaus" class="avatar-mensagem">
+                  <div class="bolha-mensagem">Thank you for asking, I'm fine. I was recently working on a project for a real estate company and I posted it on Dribbble, check it out.</div>
+                  <time class="hora-mensagem">12:48</time>
+                </div>
+                <div class="mensagem enviada">
+                  <time class="hora-mensagem">12:50</time>
+                  <div class="bolha-mensagem">Wow mate, that sounds cool. I will be sure to check it out!</div>
+                  <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png" alt="You" class="avatar-mensagem">
+                </div>
+              </div>
+
+              <footer class="area-input-chat">
+                <span class="indicador-digitando">Nicolas is typing...</span>
+                <div class="wrapper-campo-input">
+                  <textarea class="campo-texto-mensagem" placeholder="Type your message here..."></textarea>
+                  <button class="botao-icone-input" title="Emoji"><i class="far fa-smile"></i></button>
+                  <button class="botao-icone-input" title="Attach file"><i class="fas fa-plus"></i></button>
+                  <button class="botao-enviar-mensagem" title="Send Message"><i class="fas fa-paper-plane"></i></button>
+                </div>
+              </footer>
+            </section>
           </div>
-          <time>12:35</time>
-        </li>
-        <!-- Repetir itens de contato conforme imagem -->
-      </ul>
-      
-      
-       
-    </aside>
-
-    <!-- Main Chat -->
-    <section class="chat-main">
-      <header class="chat-header">
-        <div class="profile">
-          <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png" alt="Nicolas Klaus">
-          <div>
-            <h2>Nicolas Klaus</h2>
-            <small>Online</small>
-          </div>
         </div>
-        <div class="actions">
-          <button class="icon video"></button>
-          <button class="icon phone"></button>
-          <button class="icon file"></button>
-        </div>
-      </header>
-
-      <div class="messages">
-        <div class="message received">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2zOSTtm5b0uRhUWwh7I708XUdROQARG9Lg&s" alt="Sender">
-          <div class="bubble">Great shots on Dribbble!</div>
-          <time>12:44</time>
-        </div>
-        <div class="message sent">
-          <time>12:45</time>
-          <div class="bubble">Thank you, how are you?</div>
-          <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png" alt="You">
-        </div>
-        <div class="message received">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2zOSTtm5b0uRhUWwh7I708XUdROQARG9Lg&s" alt="Sender">
-          <div class="bubble">Thank you for asking, I'm fine... check it out.</div>
-          <time>12:48</time>
-        </div>
-        <div class="message sent">
-          <time>12:50</time>
-          <div class="bubble">Wow mate, that sounds cool...</div>
-          <img src="https://png.pngtree.com/png-vector/20240720/ourlarge/pngtree-a-brown-and-white-cat-with-face-background-png-image_13161418.png" alt="You">
-        </div>
-      </div>
-
-      <footer class="chat-input">
-        <span>Nicolas is typing...</span>
-        <div class="input-area">
-          <textarea placeholder="Type your message here..."></textarea>
-          <button class="icon emoji"></button>
-          <button class="icon add"></button>
-          <button class="icon send"></button>
-        </div>
-      </footer>
-    </section>
-  </div>
-  
-        <!-- fim aqui --> 
       </div>
     </main>
   </body>
